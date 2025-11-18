@@ -26,3 +26,8 @@ a {
     border: 2px solid #b56536;
     border-radius: 10px;
 }
+
+.go-up {
+    color: #b56536;
+    cursor: pointer;
+}
