@@ -35,6 +35,11 @@
       <td class="content" valign="top">
         <h1>Супы</h1>
         <p>Выберите рецепт из списка слева.</p>
+
+       <p>Супы — один из самых популярных и любимых видов блюд в русской кухне. Они согревают, питают и отлично подходят как для повседневного меню, так и для праздничного стола.</p>
+        <p>В нашей коллекции вы найдете как классические рецепты — борщи, щи, солянки — так и оригинальные варианты с добавлением овощей, грибов, фруктов и даже морепродуктов.</p>
+        <p>Мы стараемся соблюдать традиции, но также предлагаем современные интерпретации, чтобы каждый мог найти рецепт, который подойдет именно вам.</p>
+        <p>Не забудьте оставить комментарий или поделиться рецептом — мы будем рады вашим отзывам!</p>
       </td>
       <td class="navbar-right" width="20%" valign="bottom"><div class="go-up" onclick="window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });">Наверх</div></td>
     </tr>
@@ -48,6 +53,20 @@
       </td>
     </tr>
   </table>
+  <script>
+    (function () {
+      try {
+        if (!location.hostname.endsWith('github.io')) return;
+        var parts = location.pathname.split('/').filter(Boolean);
+        var base = parts.length ? '/' + parts[0] + '/' : '/';
+        document.querySelectorAll('a[href="/"]').forEach(function (a) { a.setAttribute('href', base); });
+        document.querySelectorAll('a.menu-link').forEach(function (a) {
+          var href = a.getAttribute('href') || '';
+          if (href.startsWith('/')) a.setAttribute('href', base + href.slice(1));
+        });
+      } catch (e) { }
+    })();
+  </script>
 </body>
 
 </html>

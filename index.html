@@ -94,6 +94,20 @@
   <a id="desserts"></a>
   <a id="turkey-mango"></a>
 
+  <script>
+    (function () {
+      try {
+        if (!location.hostname.endsWith('github.io')) return;
+        var parts = location.pathname.split('/').filter(Boolean);
+        var base = parts.length ? '/' + parts[0] + '/' : '/';
+        document.querySelectorAll('a[href="/"]').forEach(function (a) { a.setAttribute('href', base); });
+        document.querySelectorAll('a.menu-link').forEach(function (a) {
+          var href = a.getAttribute('href') || '';
+          if (href.startsWith('/')) a.setAttribute('href', base + href.slice(1));
+        });
+      } catch (e) { }
+    })();
+  </script>
 </body>
 
 </html>
