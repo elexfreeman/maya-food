@@ -14,13 +14,12 @@
         <a href="/"><img class="logo-img" src="../logo.png" alt="логотип" width="100px" height="100px"></a>
       </td>
       <td class="main-menu" valign="middle">
-        <b>
-          <a class="menu-link" href="/supy">супы</a>&nbsp;&nbsp;&nbsp;
-          <a class="menu-link" href="/salaty">салаты</a>&nbsp;&nbsp;&nbsp;
-          <a class="menu-link" href="/garniry">гарниры</a>&nbsp;&nbsp;&nbsp;
+          
+          <span>супы</span>
+          <a class="menu-link" href="/salaty">салаты</a>
+          <a class="menu-link" href="/garniry">гарниры</a>
           <a class="menu-link" href="/deserty">десерты</a>
           <a class="menu-link" href="/moi-recept">мои рецепты</a>
-        </b>
       </td>
     </tr>
   </table>
@@ -30,7 +29,7 @@
       <td class="navbar" width="20%" valign="top">
         <p><a href="kazachiy-borshch.html">Казачий борщ</a></p>
         <p><a href="solyanka-s-maslinami-i-kopchenostyami.html">Солянка с маслинами и копченостями</a></p>
-        <p><a href="sup-pyure-iz-kabachkov-s-gribami.html">Суп-пюре из кабачков с грибами</a></p>
+        <p>Суп-пюре из кабачков с грибами</p>
       </td>
       <td class="content" valign="top">
         <h1>Суп-пюре из кабачков с грибами</h1>
@@ -97,20 +96,6 @@
       </td>
     </tr>
   </table>
-  <script>
-    (function () {
-      try {
-        if (!location.hostname.endsWith('github.io')) return;
-        var parts = location.pathname.split('/').filter(Boolean);
-        var base = parts.length ? '/' + parts[0] + '/' : '/';
-        document.querySelectorAll('a[href="/"]').forEach(function (a) { a.setAttribute('href', base); });
-        document.querySelectorAll('a.menu-link').forEach(function (a) {
-          var href = a.getAttribute('href') || '';
-          if (href.startsWith('/')) a.setAttribute('href', base + href.slice(1));
-        });
-      } catch (e) { }
-    })();
-  </script>
 </body>
 
 </html>
